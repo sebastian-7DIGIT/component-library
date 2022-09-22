@@ -10,12 +10,10 @@ export const Requirement = ({ value, requirement }) => {
   }, [value, requirement]);
 
   return (
-    <div className='requirement'>
+    <div className="requirement">
       {isValid ? <Checkmark /> : <Xmark />}
-      
-      <p className={isValid ? 'valid' : 'invalid'}>
-        {requirement.text}
-      </p>
+
+      <p className={isValid ? "valid" : "invalid"}>{requirement.text}</p>
     </div>
   );
 };
