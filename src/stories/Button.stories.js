@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
 import "./styles.css";
-import { Requirements } from "../components/Requirements";
-import { SignUpForm } from "../components/Forms/sign_up_form/SignUpForm";
+import { Button } from "../components/Button/Button";
 
 const stories = storiesOf("App Test", module);
 
 stories.add("App", () => {
-  return <SignUpForm />;
+  return <Button onClick={() => console.log("clicked")} text={"Button"} />;
 });
